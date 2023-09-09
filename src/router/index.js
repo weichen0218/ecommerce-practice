@@ -16,6 +16,23 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/Login.vue"),
+  },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    children: [ 
+      {
+        path: "products",
+        component: ()=> import("../views/Products.vue"),
+      }
+    ],
+    component: () => import("../views/Dashboard.vue"),
+  },
+
 ];
 
 const router = createRouter({

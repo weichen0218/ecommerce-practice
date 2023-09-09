@@ -1,0 +1,8 @@
+忘記 App.vue 添加 scss
+@import './assets/all';
+忘記複製 _variables.scss
+忘記 npm install --save axios vue-axios
+忘記在 Login.vue 建立 user 物件
+submit 忘記添加 prevent
+好的寫法 const { token, expired } = res.data;
+dashboard.vue 忘記添加 <router-view />
