@@ -6,3 +6,4 @@
 submit 忘記添加 prevent
 好的寫法 const { token, expired } = res.data;
 dashboard.vue 忘記添加 <router-view />
+忘記加上 type="button"
